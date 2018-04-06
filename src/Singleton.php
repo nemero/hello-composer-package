@@ -8,6 +8,10 @@
 
 namespace Nemero\Package;
 
+/**
+ * Trait Singleton
+ * @package Nemero\Package
+ */
 trait Singleton
 {
     private static $instance = null;
@@ -16,6 +20,8 @@ trait Singleton
     private function __wakeup () {}
 
     /**
+     * Get Instance
+     *
      * @return Singleton
      */
     public static function getInstance()

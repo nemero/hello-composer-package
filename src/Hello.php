@@ -8,10 +8,19 @@
 
 namespace Nemero\Package;
 
+/**
+ * Class Hello
+ * @package Nemero\Package
+ */
 class Hello
 {
     use Singleton;
 
+    /**
+     * Just return string
+     *
+     * @return string
+     */
     public function getHello()
     {
         return "Hello this a helper method.";
